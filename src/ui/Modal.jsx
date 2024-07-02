@@ -64,9 +64,7 @@ function Modal({ children }) {
 
   return (
     <ModalContext.Provider value={{ openName, close, open }}>
-      <Question ID="1" Shortcut="chapter 1" Order="" ElementType="chapter">
-        <LongCaption>{children}</LongCaption>
-      </Question>
+      {children}
     </ModalContext.Provider>
   );
 }
